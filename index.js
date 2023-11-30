@@ -142,7 +142,7 @@ function playagain(){
     home_second.classList.remove("show_second");
     home_win.classList.remove("show_win");
     home_next.classList.remove("show_next");
-    document.getElementById("rule").style.left="86rem";
+    document.getElementById("rule").style.left="85rem";
 }
 function play_again(){
     home_first.classList.remove("show_first");
