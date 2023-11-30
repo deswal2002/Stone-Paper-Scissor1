@@ -1,0 +1,630 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #8CC461;
+}
+#score{
+    width: 55rem;
+    height: 9rem;
+    border-radius: 13px;
+    border: 2px solid #FFF;
+    margin: 4rem 20rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+}
+#score.show_score{
+    visibility: hidden;
+}
+.wr{
+    width: 7rem;
+    height: 7rem;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 5px;
+    margin: 0.7rem 1rem;
+}
+.us{
+    width: 9rem;
+    height: 7.5rem;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 25.2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    margin-top: 0.7rem;
+}
+.us1{
+    color: #656565;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    margin: 0.5rem 0.9rem 0rem;
+}
+.us2{
+    width: 5.2rem;
+    height: 3.8rem;
+    box-sizing: border-box;
+    color: #252525;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 2rem;
+    border-style: none;
+    text-align: center;
+}
+.s{
+    width: 9rem;
+    height: 7.5rem;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    margin-top: 0.7rem;
+    margin-left: 1.5rem;
+}
+.s1{
+    color: #656565;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    margin: 0.5rem 2.4rem 0rem;
+}
+.s2{
+    width: 5.2rem;
+    height: 3.8rem;
+    box-sizing: border-box;
+    color: #252525;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 2rem;
+    border-style: none;
+}
+.fr{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+}
+#fr.show_first{
+    visibility: hidden;
+}
+.stone1{
+    position: relative;
+    top: 0;
+    left:32rem;
+}
+.stone2{
+    position: absolute;
+    top: 20rem;
+    left: 34.7rem;
+}
+.line{
+    width: 10rem;
+    height: 1rem;
+    background: rgba(0, 0, 0, 0.64);
+    margin-top: 4.5rem;
+    margin-left: 31.2rem;
+}
+.sic{
+    margin: 0;
+    padding:0;
+}
+.sic1{
+    position: relative;
+    right: 0.8rem;
+}
+.sic2{
+    position: absolute;
+    top: 20.5rem;
+    left: 54.5rem;
+}
+.sr{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+}
+#sr.show_second{
+    visibility: hidden;
+}
+.line2{
+    width: 9rem;
+    height: 1rem;
+    background: rgba(0, 0, 0, 0.64);
+    transform: rotate(60deg);
+    margin-left: 37.1rem;
+    margin-top:1.8rem;
+}
+.hand1{
+    position: relative;
+    right: 4.9rem;
+    top: 4.56rem;
+}
+.hand2{
+    position: absolute;
+    left: 44rem;
+    top: 34.8rem;
+}
+.line3{
+    width: 9rem;
+    height: 1rem;
+    background: rgba(0, 0, 0, 0.64);
+    transform: rotate(120deg);
+    position: absolute;
+    left: 47rem;
+    top:29.35rem;
+}
+#rule{
+    width: 8rem;
+    height: 3rem;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
+    left: 86rem; 
+    top: 42.5rem;
+    position: absolute;
+}
+#rules{
+    width: 19rem;
+    height: 22rem;
+    visibility: hidden;
+    position: absolute;
+    top: 19.5rem;
+    left: 74.5rem;
+    border-radius: 13px;
+    border: 10px solid #FFF;
+    background: #004429;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.h{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 29px;
+    font-weight: 500;
+    margin-left: 3.8rem;
+    margin-top: 1rem;
+}
+#rules ul{
+    color: #FFD600;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: square;
+    padding-right: 1rem;
+}
+#rules ul span{
+    color: #FFF;
+}
+.cross_circle{
+    bottom: 19.5rem;
+    left: 16rem;
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    box-sizing: border-box;
+}
+.cross{
+    bottom: 19.2rem;
+    left: 17.1rem;
+    position: absolute;
+    background: none;
+    color: #FFF;
+    font-family: Dangrek;
+    font-size:44px;
+    font-weight: 400;
+    border: none;
+}
+#rules.show {
+    visibility: visible;   
+}
+#win{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 80rem;
+    top: 15rem;
+    height: 25rem;
+    visibility: hidden;
+}
+#win.show_win{
+    visibility: visible;
+}
+.cir0{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 350px;
+    background: rgba(46, 154, 37, 0.39);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    left: 20rem;
+    top: 5rem;
+}
+.cir1{
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 350px;
+    background: rgba(29, 168, 43, 0.79);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.cir2{
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 350px;
+    background: rgba(59, 103, 31, 1);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.win1{
+    position: absolute;
+    top:1.9rem;
+    left: 1.9rem;
+}
+.win2{
+    position: absolute;
+}
+.tex{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-left: 4.8rem;
+    margin-top: 1.2rem;
+}
+.you{
+    display: flex;
+    flex-direction: column;
+}
+.win3{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 39px;
+    font-weight: 800;
+    letter-spacing: 3.9px;
+    margin-left: 40rem;
+    margin-top: 12rem;
+}
+.win4{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;  
+    letter-spacing: 2.5px;
+    margin-left: 40rem;
+}
+.win5{
+    width: 10rem;
+    height: 2.5rem;
+    color: #6B6B6B;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 40.6rem;
+    border:none;
+    margin-top: 0.8rem;
+}
+.loss0{
+    margin-top: 9rem;
+    margin-left: 4rem;
+}
+.loss1{
+    position: absolute;
+}
+.pc{
+    position: absolute;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-left: 6.2rem;
+    margin-top: 6rem;
+}
+#loss{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 80rem;
+    top: 15rem;
+    height: 25rem;
+    visibility: hidden;
+}
+#loss.loss_show{
+    visibility: visible;
+}
+#pc_win{
+    margin-top: 9rem;
+    margin-left: 25rem;
+}
+#pc_win1{
+    position: absolute;
+    left: 28rem;
+    top: 12rem;
+}
+.tex1{
+    position: absolute;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-left: 26.7rem;
+    margin-top: 6rem;
+}
+.pc1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.loss2{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 39px;
+    font-weight: 800;
+    letter-spacing: 3.9px;
+    margin-left: 42rem;
+    margin-top: 12rem;
+}
+.loss3{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;  
+    letter-spacing: 2.5px;
+    margin-left: 42rem;   
+}
+.loss4{
+    width: 10rem;
+    height: 2.5rem;
+    color: #6B6B6B;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 43.6rem;
+    border:none;
+    margin-top: 0.8rem;
+}
+.cir3{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 350px;
+    background: rgba(46, 154, 37, 0.39);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    left: 56rem;
+    top: 5rem;
+}
+.cir4{
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 350px;
+    background: rgba(29, 168, 43, 0.79);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.cir5{
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 350px;
+    background: rgba(59, 103, 31, 1);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    top: 1.5rem;
+    left: 1.5rem;
+}
+#loss6{
+    position: absolute;
+    top:1.9rem;
+    left: 1.9rem;
+}
+#loss7{
+    position: absolute;
+}
+.pc2{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-left: 5.5rem;
+    margin-top: 6rem;
+}
+#draw{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 80rem;
+    top: 15rem;
+    height: 25rem;
+    visibility: hidden;
+}
+#draw.show_draw{
+    visibility: visible;
+}
+.draw_you{
+    position: absolute;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-left: 26.7rem;
+    margin-top: 6rem;
+}
+#draw1{
+    margin-top: 9rem;
+    margin-left: 25rem;
+}
+#draw2{
+    position: absolute;
+    left: 28rem;
+    top: 12rem;
+}
+.tie{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.tie1{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 3.9px;
+    margin-left: 42rem;
+    margin-top: 13rem;
+}
+.tie2{
+    width: 10rem;
+    height: 2.5rem;
+    color: #6B6B6B;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 42rem;
+    border:none;
+    margin-top: 2rem;
+}
+.draw_you1{
+    position: absolute;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    margin-left: 26.9rem;
+    margin-top: 6rem;
+}
+#draw3{
+    margin-top: 9rem;
+    margin-left: 25rem;
+}
+#draw4{
+    position: absolute;
+    left: 63.2rem;
+    top: 11.9rem;
+}    
+#final{
+    position: absolute;
+    width: 88rem;
+    height: 40rem;
+    top :1rem;
+    visibility: hidden;
+}
+#final.show_final{
+    visibility: visible;
+}
+.cup2{
+    margin-left: 31rem;
+    margin-top: 4rem;
+}
+.cup1{
+    position: absolute;
+    left: 41rem;
+    top: 10rem;
+}
+.hurray{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 91px;
+    font-weight: 600;
+    letter-spacing: 9.1px;
+    margin-top: 4rem;
+    margin-left: 8rem;
+}
+.game{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 41px;
+    font-weight: 600;
+    letter-spacing: 4.1px;
+    margin-left: 7.8rem;
+}
+.game1{
+    width: 12rem;
+    height: 3rem;
+    color: #6B6B6B;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 9px;
+    background: #FFF;
+    margin-left: 41.1rem;
+    border:none;
+    margin-top: 2rem;   
+}
+#next{
+    width: 8rem;
+    height: 3rem;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
+    left: 86rem; 
+    top: 42.5rem;
+    position: absolute;
+    visibility: hidden;
+}
+#next.show_next{
+    visibility: visible;
+}

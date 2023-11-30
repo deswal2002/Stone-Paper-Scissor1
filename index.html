@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Dangrek&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="b">
+        <div id="score">
+            <div class="wr">ROCK PAPER SCISSORS</div>
+            <div class="us">
+                <div class="us1">COMPUTER &nbsp;&nbsp;&nbsp;&nbsp;SCORE</div>
+                <div ><input type="text"  class="us2" id="us2" ></div>
+            </div>
+            <div class="s">
+                <div class="s1">&nbsp;YOUR SCORE</div>
+                <div ><input type="text"  class="s2" id="s2" ></div>
+            </div>
+        </div>
+        <div id="play">
+            <div class="fr" id="fr">
+                <div class="rock">
+                    <img src="./image/Group 2.svg" class="stone1">
+                    <input type="image" src="./image/icons8-fist-67 1 (1).png" class="stone2" onclick="who_win('0')">
+                </div>
+                <div class="line"></div>
+                <div class="sic">
+                    <img src="./image/Group 3 (1).svg" class="sic1">
+                    <input type="image" src="./image/17911 1.png" class="sic2" onclick="who_win('1')">
+                </div>
+            </div>
+            <div class="sr" id="sr">
+                <div  class="line2"></div>
+                <div class="hand">
+                    <img src="./image/Group 1.svg" class="hand1">
+                    <input type="image" src="./image/icons8-hand-64 1.png" class="hand2" onclick="who_win('2')">
+                </div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <div id="win">
+            <div class="win0">
+                <span class="cir0">
+                    <span class="cir1">
+                        <span class="tex">YOU PICKED</span>
+                        <span class="cir2">
+                            <img class="win1" id="win1">
+                            <img  class="win2" id="win2" >
+                        </span>
+                    </span>
+                </span>
+            </div>
+            <div class="you">
+                <div class="win3">YOU WIN</div>
+                <div class="win4">AGAINST PC</div>
+                <div ><button class="win5" onclick="playagain()">PLAY AGAIN</button></div>
+            </div>
+            <div>
+                <div class="pc">PC PICKED</div>
+                <div>
+                    <img  class="loss0" id="loss0">
+                    <img  class="loss1" id="loss1">
+                </div>
+            </div>
+        </div>
+        <div id="loss">
+            <div>
+                <div class="tex1">YOU PICKED</div>
+                <div>
+                    <img  id="pc_win">
+                    <img  id="pc_win1">
+                </div>
+            </div>
+            <div class="pc1">
+                <div class="loss2">YOU LOST</div>
+                <div class="loss3">AGAINST PC</div>
+                <div ><button class="loss4" onclick="play_again()">PLAY AGAIN</button></div>
+            </div>
+            <div class="loss5">
+                <span class="cir3">
+                    <span class="cir4">
+                        <span class="pc2">PC PICKED</span>
+                        <span class="cir5">
+                            <img  id="loss6">
+                            <img  id="loss7" >
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="draw">
+            <div>
+                <div class="draw_you">YOU PICKED</div>
+                <div>
+                    <img   id="draw1">
+                    <img id="draw2">
+                </div>
+            </div>
+            <div class="tie">
+                <div class="tie1">TIE UP</div>
+                <div ><button class="tie2" onclick="play_again_form_draw()">REPLAY</button></div>
+            </div>
+            <div>
+                <div class="draw_you1">PC PICKED</div>
+                <div>
+                    <img   id="draw3">
+                    <img id="draw4">
+                </div>
+            </div>
+        </div>
+        <div id="final">
+            <div  class="cup">
+                <img src="./image/attachment.png" class="cup2">
+                <img src="./image/Vector (4).png" class="cup1">
+            </div>
+            <div>
+                <div class="hurray">HURRAY!!</div>
+                <div class="game">YOU WON THE GAME</div>
+                <div><button class="game1" onclick="home_return()">PLAY AGAIN</button></div>
+            </div>
+        </div>
+        <div id="rules">
+            <div class="h">Game Rules</div>
+            <div>
+                <ul>
+                    <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li><br />
+                    <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li><br />
+                    <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li><br />
+                    <li><span>If both players lay down the same hand, each player lays down another hand</span></li><br />
+                </ul>
+            </div>
+            <div>
+                <img src="./image/Ellipse 6 (1).svg" class="cross_circle">
+                <input type="button" value="X" class="cross" onclick="close_rule()">
+            </div>
+            
+        </div>
+        <input type="button" value="RULES" id="rule" onclick="open_rule()">
+        <input type="button" value="NEXT" id="next" onclick="result()">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
