@@ -159,7 +159,7 @@ function result(){
     home_score.classList.add("show_score");
     home_final.classList.add("show_final");
     home_next.classList.remove("show_next");
-    document.getElementById("rule").style.left="86rem";
+    document.getElementById("rule").style.left="85rem";
 }
 function home_return(){
     home_first.classList.remove("show_first");
