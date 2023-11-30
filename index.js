@@ -27,7 +27,7 @@ function who_win(my_choice){
         let win_sign=document.getElementById("win2");
         let loss= document.getElementById("loss0");
         let loss_sign=document.getElementById("loss1");
-        document.getElementById("rule").style.left="76.5rem";
+        document.getElementById("rule").style.left="74.5rem";
         home_next.classList.add("show_next");
         if(my_choice==='0'){
             win.setAttribute("src", "./image/Group 2.svg");

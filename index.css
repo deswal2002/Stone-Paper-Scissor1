@@ -190,8 +190,8 @@ body{
     border-radius: 10px;
     border: 2px solid #FFF;
     background: rgba(217, 217, 217, 0.00);
-    left: 86rem; 
-    top: 42.5rem;
+    left: 84rem; 
+    top: 41rem;
     position: absolute;
 }
 #rules{
@@ -199,8 +199,8 @@ body{
     height: 22rem;
     visibility: hidden;
     position: absolute;
-    top: 19.5rem;
-    left: 74.5rem;
+    top: 18rem;
+    left: 72rem;
     border-radius: 13px;
     border: 10px solid #FFF;
     background: #004429;
@@ -620,8 +620,8 @@ body{
     border-radius: 10px;
     border: 2px solid #FFF;
     background: rgba(217, 217, 217, 0.00);
-    left: 86rem; 
-    top: 42.5rem;
+    left: 84rem; 
+    top: 41rem;
     position: absolute;
     visibility: hidden;
 }
