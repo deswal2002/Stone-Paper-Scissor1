@@ -1,3 +1,12 @@
+function clear_data(){
+    let session = sessionStorage.getItem('previous')
+    if(session===null){
+        localStorage.setItem("pc_score","0");
+        localStorage.setItem("your_score","0");
+    } 
+    sessionStorage.setItem('previous','1');
+}
+window.addEventListener('load',clear_data);
 let rule_book= document.getElementById("rules");
 let home_first=document.getElementById("fr");
 let home_second=document.getElementById("sr");
@@ -27,7 +36,7 @@ function who_win(my_choice){
         let win_sign=document.getElementById("win2");
         let loss= document.getElementById("loss0");
         let loss_sign=document.getElementById("loss1");
-        document.getElementById("rule").style.left="75.5rem";
+        document.getElementById("rule").style.left="80vw";
         home_next.classList.add("show_next");
         if(my_choice==='0'){
             win.setAttribute("src", "./image/Group 2.svg");
@@ -142,7 +151,7 @@ function playagain(){
     home_second.classList.remove("show_second");
     home_win.classList.remove("show_win");
     home_next.classList.remove("show_next");
-    document.getElementById("rule").style.left="85rem";
+    document.getElementById("rule").style.left="90vw";
 }
 function play_again(){
     home_first.classList.remove("show_first");
@@ -159,7 +168,7 @@ function result(){
     home_score.classList.add("show_score");
     home_final.classList.add("show_final");
     home_next.classList.remove("show_next");
-    document.getElementById("rule").style.left="85rem";
+    document.getElementById("rule").style.left="90vw";
 }
 function home_return(){
     home_first.classList.remove("show_first");
